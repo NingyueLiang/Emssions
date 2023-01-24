@@ -1,0 +1,77 @@
+"Afghanistan": {
+    "iso_code": "AFG",
+    "data": [
+        {
+            "year": 1991,
+            "population": 13299016,
+            "gdp": 12047362048.0,
+
+            // CO2
+            "co2": 2.427366018295288,
+            "co2_growth_abs": -0.17587199807167053,
+            "co2_growth_prct": -6.760000228881836,
+            "co2_per_capita": 0.18250000476837158,
+            "co2_per_gdp": 0.20149999856948853,
+            "co2_per_unit_energy": 0.1746000051498413,
+            "cumulative_co2": 61.60976791381836,
+            
+            // CO2 from cement
+            "cement_co2": 0.04576599970459938,
+            "cement_co2_per_capita": 0.0034000000450760126,
+            "cumulative_cement_co2": 1.582327961921692,
+            
+            // CO2 from coal
+            "coal_co2": 0.24915200471878052,
+            "coal_co2_per_capita": 0.018699999898672104,
+            "cumulative_coal_co2": 11.759180068969727,
+
+            // CO2 from flaring
+            "flaring_co2": 0.025647999718785286,
+            "flaring_co2_per_capita": 0.0019000000320374966,
+            "cumulative_flaring_co2": 5.736098766326904,
+
+            // CO2 from gas
+            "gas_co2": 0.38838401436805725,
+            "gas_co2_per_capita": 0.029200000688433647,
+            "cumulative_gas_co2": 11.20237922668457,
+
+            // CO2 from oil
+            "oil_co2": 1.7184159755706787,
+            "cumulative_oil_co2": 31.329788208007812,
+            "oil_co2_per_capita": 0.12919999659061432,
+
+            
+            // methane
+            "methane": 7.019999980926514,
+            "methane_per_capita": 0.5278586149215698,
+            
+            // N2O
+            "nitrous_oxide": 2.930000066757202,
+            "nitrous_oxide_per_capita": 0.2203170508146286,
+            
+            // Energy consumption
+            "primary_energy_consumption": 13.902764320373535,
+            "energy_per_capita": 1045.39794921875,
+            "energy_per_gdp": 1.1540089845657349,
+            
+            "share_global_cement_co2": 0.009999999776482582,
+            "share_global_co2": 0.009999999776482582,
+            "share_global_coal_co2": 0.0,
+            "share_global_cumulative_cement_co2": 0.009999999776482582,
+            "share_global_cumulative_co2": 0.009999999776482582,
+            "share_global_cumulative_coal_co2": 0.0,
+            "share_global_cumulative_flaring_co2": 0.07000000029802322,
+            "share_global_cumulative_gas_co2": 0.009999999776482582,
+            "share_global_cumulative_oil_co2": 0.009999999776482582,
+            "share_global_flaring_co2": 0.009999999776482582,
+            "share_global_gas_co2": 0.009999999776482582,
+            "share_global_oil_co2": 0.019999999552965164,
+            
+            // Total green house gas
+            "ghg_excluding_lucf_per_capita": 0.9173610806465149,
+            "ghg_per_capita": 0.7376485466957092,
+            "total_ghg": 9.8100004196167,
+            "total_ghg_excluding_lucf": 12.199999809265137
+        }
+    ]
+}

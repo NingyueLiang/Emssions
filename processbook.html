@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/pmd6kci.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/processbook.css">
+    <title>Process Book</title>
+</head>
+<body>
+    <!-- title and header image -->
+    <div class="title">
+        <div class="titleText">
+            <h1>Process Book</h1>
+        </div>
+        <p>Elyse Tang 488211</p>
+        <p>Brian Cui 475639</p>
+        <p>Frank Liang 486475</p>
+    </div>
+
+    <!--background and motivation -->
+    <div class="content">
+        <br>
+        <h2>Backgrounds and Motivation</h2>
+        <p>
+            Greenhouses gases, such as carbon dioxide and methane, exist in the atmosphere and keep warm air near the Earth’s
+            surface. Human activities, notably fossil fuels consumptions, industrial construction, deforestation, etc., over the
+            past century have been causing the amounts of greenhouse gases in the air to skyrocket, trapping an excessive amount of
+            heat around Earth. Climate scientists believe that global warming is mainly caused by human activity. Through this
+            project, we aim to dive deeper into the relations between human activities since the 1960s and global temperature rise.
+        </p>    
+    </div>
+
+    <!-- original sketch -->
+    <div class="imgBody">
+        <img src="img/sketch1.png" alt="original sketch 1">
+        <div class="cap">
+            <div>
+                <div class="capLine"> </div>
+                <div class="capText">
+                    <p>
+                        Original Sketch 1
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="imgBody">
+        <img src="img/sketch2.png" alt="original sketch 2">
+        <div class="cap">
+            <div>
+                <div class="capLine"> </div>
+                <div class="capText">
+                    <p>
+                        Original Sketch 2
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="imgBody">
+        <img src="img/sketch3.png" alt="original sketch 3">
+        <div class="cap">
+            <div>
+                <div class="capLine"> </div>
+                <div class="capText">
+                    <p>
+                        Original Sketch 3
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="imgBody">
+        <img src="img/sketch4.png" alt="original sketch 4">
+        <div class="cap">
+            <div>
+                <div class="capLine"> </div>
+                <div class="capText">
+                    <p>
+                        Original Sketch 4
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="imgBody">
+        <img src="img/ori_sketch.jpg" alt="original final sketch">
+        <div class="cap">
+            <div>
+                <div class="capLine"> </div>
+                <div class="capText">
+                    <p>
+                        Orginal Completed Design
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="content">
+        <h2>Orginal Sketch</h2>
+        <p>
+            We’ll display our data as shown in our final design above. First, our visualization will have a fixed Global Greenhouse
+            Emission vs. Time line graph on the top of the page, serving as time slide for the rest of the visualizations. The line
+            graph will explore global greenhouse gas emissions over the years, answering primary question #1. Furthermore, we’ll
+            display each country’s greenhouse gas emission in the selected year via a globe view. The globe visualization will use
+            color gradient to compare and contrast the extent of each country’s greenhouse gas emission, thus answering primary
+            question #2. Users can also select a specific country on the globe visualization to further investigate that country’s
+            greenhouse gas emission, which will be shown in the Emission by Category graph and Emission by Type graph to the right
+            of the globe visualization, consequently addressing primary question #3.
+        </p>
+        <p>
+            Below the glove visualization, we will investigate the relationship between human activity and greenhouse gas emission
+            by illustrating Greenhouse Gas Emission v.s. Population graph and Greenhouse Gas Emission v.s. GDP graph. Each country
+            will be represented with a text label of its name. The size of the circle will represent the amount of greenhouse gas
+            emission, and the color of the circle will represent a human activity indicator (Population or GDP) based on the user’s
+            choice. Such design will enable users to further examine each country’s contribution to greenhouse gas emission.
+        </p>
+    </div>
+
+    <div class="content">
+        <h2>Exploratory Data Analysis</h2>
+        <ul>
+            <li>What visualizations did we use to look at the data initially?</li>
+            <p>
+                We first tried using bar graph for the emissions by year chart. We also implemented a small bar graph for CO2 emissions
+                by source and a world map with color layers using GeoJSON to inidicate intensity of emission in each country.
+            </p>
+            <li>What insights did we gain? How did these insights inform our design?</li>
+            <p>
+                Bar charts are better for size comparision while line charts are more ideal for showcasing change in trend across time,
+                so we ended up replacing the emissions by year bar chart with a line graph. We also added a fixed size brush for user to
+                select the specific year they want to view.
+            </p>
+        </ul>
+    </div>
+
+    <!-- milestone 1 -->
+    <div class="imgBody">
+        <img src="img/milestone1.png" alt="milestone 1">
+        <div class="cap">
+            <div>
+                <div class="capLine"> </div>
+                <div class="capText">
+                    <p>
+                        Milestone 1 Overview
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Milestone 1</h2>
+        <ul>
+            <li>What questions are we trying to answer?</li>
+            <p>
+                We are trying to answer the following three questions through our visualization: During what time frame in the past
+                thirty years did greenhouse gas emissions increase the most? Which countries have contributed the most to greenhouse gas
+                emissions in the past thirty years? What are the main sources of greenhouse gas emissions?
+            </p>
+            <li>How did these questions evolve throughout the project?</li>
+            <p>
+                Up till milestone one, we have completed data acquisition, data filtering, and the overall structure of our site. We
+                acquired a JSON dataset for global-wide greenhouse gas emissions data by country and year. We created our charts as
+                objects and implemented the "initVis(), wrangleData(), updateVis()" pipeline for each one of them. 
+            </p>
+            <li>What new questions did we consider in the course of our analysis?</li>
+            <p>
+                As we began to design the charts, we thought about multiple ways to organize the navigation and layout of the site.
+                Since we are categorizing both by location (countries) and year (1990 - 2020), we need to find a method (slider/time
+                chart) to control these variables so that all the information can be showcased in an organized and precise way.
+            </p>
+            <p>
+                In our first prototype, we decided to use a line graph with a fixed-size brush for year selection and a global map for
+                country selection. These two graphs serve as the primary control units for the entire site. We have yet to hook up the
+                map with the other graphs, but the expected behavior is that the users can choose to view the emission data for a
+                specific year or country.
+            </p>
+        </ul>
+    </div>
+
+    <!-- milestone 2 -->
+    <div class="imgBody">
+        <img src="img/milestone2.png" alt="milestone 2">
+        <div class="cap">
+            <div>
+                <div class="capLine"> </div>
+                <div class="capText">
+                    <p>
+                        Milestone 2 Overview
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Milestone 2</h2>
+        <ul>
+            <li>
+                <p>Design Evolution: What are the different visualizations you considered? Justify the design decisions you made using the perceptual and design principles you learned in the course. Did you deviate from your proposal?
+                </p>
+                <p>
+                    In milestone 2, we added a graph visualizing the makeup of Greenhouse Gas Emission in the selected year. A pie chart was used to effectively communicate the percentage of each type (Nitrous Oxide, Methane, and CO2) of the total greenhouse gas emission. Doing so answers our proposed questions, as the visualization help us to understand the main sources of greenhouse gas emissions. 
+                </p>
+            </li>
+
+            <li>
+                <p>Implementation: Describe the intent and functionality of the interactive visualizations you implemented. Provide clear and well-referenced images showing the critical design and interaction elements.
+                </p>
+                <p>
+                    We have synched all visualizations so that the visualizations are responsive to user inputs of time(year) and geographic location(country), enhancing usability.
+
+                    Clicking and sliding the brush in the emission area graph wil update time (year) selection in other data visualizations. Similarly, clicking on a country in the world map view will update geographic location (country) selection in the rest of the data visualizations. When no country is selected, our graphs visualize and analyze the global greenhouse gas emmission between 1990 and 2020. To return to the global view from a specific country view, user can click the return button to reset. 
+                    
+                    When user hover over the country in the map view, our visualization display the following data:
+
+                </p>
+
+                <img src="img/brush.png" alt="Brush Selection">
+                <img src="img/button.png" alt="Reset Button">
+                <img src="img/countryClicked.png" alt="Country Clicked View">
+            </li>
+
+            <li>
+            <p>
+                Evaluation: What did you learn about the data by using your visualizations? How did you answer your questions? How well does your visualization work, and how could you further improve it?
+            </p>
+                <p>
+                    Using our visualizations, we answered our proposed questions: During what time frame in the past thirty years did greenhouse gas emissions increase the most? Which countries have contributed the most to greenhouse gas emissions in the past thirty years? What are the main sources of greenhouse gas emissions?
+
+                    While our current visualizations meet the requirements listed in our project proposal by including all the must-have features, we plan to further improve our project by redesigning user flow, adding additional user interactions and narrative/ labelings to increase usability and clarity, and implementing semantic colors in the world map view.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- final design -->
+    <!-- <div class="imgBody">
+        <img src="img/final-design.jpeg" alt="Final Design">
+        <div class="cap">
+            <div>
+                <div class="capLine"> </div>
+                <div class="capText">
+                    <p>
+                        Final Design
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- <div class="content">
+        <h2>Final Design</h2>
+        <p>In Progress</p>
+        <h2>Design Evolution</h2>
+        <ul>
+            <li>What are the different visualizations we considered?</li>
+            <p>
+                In Progress
+            </p>
+            <li>Did we deviate from our proposal?</li>
+            <p>
+                In Progress
+            </p>
+        </ul>
+    </div> -->
+
+    <!-- footer -->
+    <div class="footer">
+        <footer>
+            <p>References:</p>
+            <a href="https://github.com/owid/co2-data">Global Greenhouse Gas Emissions Data</a> <br>
+            <a>CSE 457 Pipeline Structure</a> <br>
+            <a href="https://d3-graph-gallery.com/graph/donut_label.html">Pie Chart</a> <br>
+
+        </footer>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+
+

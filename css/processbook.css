@@ -1,0 +1,127 @@
+html{
+    background-color: white;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-family: raleway, sans-serif;
+    font-weight: normal;
+}
+
+.titleText{
+    background-color: rgba(162, 241, 205, 0.927);
+    height: 130px;
+    position: relative;
+    top: -32px;
+}
+
+.footer footer{
+    background-color: rgba(162, 241, 205, 0.927);
+    height: 70px;
+    top: 40px;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 160px;
+    line-height: 2;
+
+}
+h1,h2,p,ul,ol,footer{
+    padding-left: 50px;
+    font-weight: 300;
+}
+ol p, footer p{
+    padding-left: 0;
+}
+h1{
+    font-size: 25px;
+}
+.title h1{
+    font-size: 30px;
+    padding-top: 67px;
+    font-weight: 300;
+}
+
+img{
+    max-width: 600px;
+    height: auto;
+    padding-left: 50px;
+
+    object-fit:cover;
+    object-position:20%;
+}
+.imgBody{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.cap{
+    float: left;
+    width: 95%;
+    display: grid;
+}
+.capText p{
+    font-family: raleway, sans-serif;
+    font-size: 19px;
+    padding-right: 0px;
+    padding-left: 15px;
+    letter-spacing: 1px;
+    color: rgb(75, 176, 99);
+    margin-bottom: 0px;
+}
+.capLine{
+    height: 2px;
+    width: 50px;
+    background-color: rgb(75, 176, 99);
+    float: left;
+    margin-left: 15px;
+}
+.cap div{
+    align-self: end;
+}
+ol{
+    line-height: 2;
+    width: 60%;
+}
+.content p{
+    line-height: 2;
+    width: 60%;
+}
+
+@media screen and (max-width: 700px) {
+    html{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .imgBody{
+        display:block;
+        grid-template-columns: none;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    .cap{
+        width: 100%;
+        align-self: baseline;
+        margin-bottom:35px;
+    }
+    .cap div{
+        display: none;
+    }
+    .capLine{
+        display: none;
+    }
+    .capText p{
+        display: inline-block;
+        margin-bottom: 12px;
+        margin-top: 12px;
+        width: 95%;
+    }
+    img{
+        width: 100%;
+    }
+    h1,h2,p,ul,ol{
+        width: 82%;
+    }
+}

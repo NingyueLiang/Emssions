@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CSE457 - Final Project</title>
+
+	<!-- <link href="https://fonts.googleapis.com/css?family=Neuton:300,400,400i,700,800" rel="stylesheet"> -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+	
+	<!-- CSS libraries -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/leaflet.css">
+	<!-- Custom CSS code -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-fixed-top">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+
+		<a class="navbar-brand" href="#">Emissions</a>
+	  
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+		  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+			<li class="nav-item actived">
+			  <a class="actived nav-link" href="#">Home </a>
+			</li>
+			<li class="nav-item">
+			  <a class="nav-link" href="processbook.html">Process Book</a>
+			</li>
+		  </ul>
+
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		
+		<div class="row" id="control">
+			<div class="col-lg-12">
+				<h1>Total Greenhouse Gas Emission</h1>
+				<h2 id="year">Time Selected: <span>2000-2001</span></h2>
+				<div id="countvis"></div>
+			</div>
+		</div>
+
+		<div class="row" >
+			<h1>Greenhouse Gas Emission Composition</h1>
+
+			<h2 id="regionSelected">Region Selected: <span>World</span></h2>
+			<button id="reset">RESET</button>
+
+		</div>
+		
+		<div class="row">
+			<div class="col-lg-9">
+				<div id="globalvis">
+					<div id="global-map"></div>
+				</div>
+				
+			</div>
+
+			<!-- <div class="col-sm-1"> -->
+			<!-- </div> -->
+
+			<div class="col-sm-3">
+				<div id="gasvis"></div>
+				<div id="carbondioxidevis"></div>
+			</div>
+		</div>
+
+		<!-- <div class="row">
+			<div class="col-md-12">
+				<div id="globalvis">
+					<div id="global-map"></div>
+					<button id="reset">Reset</button>
+				</div>	
+			</div>
+		</div> -->
+
+		<br>
+
+	</div>
+
+	<!-- Load JS libraries -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/d3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.min.js"></script>
+    <script src="js/leaflet.js"></script>
+	<!-- Visualization objects -->
+	<script src="js/countvis.js"></script>
+	<script src="js/carbondioxideVis.js"></script>
+	<script src="js/gasVis.js"></script>
+	<script src="js/globalMap.js"></script>
+	<!-- Load data, create visualizations -->
+	<script src="js/main.js"></script>
+</body>
+</html>
