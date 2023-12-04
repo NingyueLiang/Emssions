@@ -1,6 +1,6 @@
 # emissions
 
-## website: https://csex57.github.io/emissions/
+## website: [https://csex57.github.io/emissions/](https://ningyueliang.github.io/Emssions/)
 
 ## video walkthrough: 
 
